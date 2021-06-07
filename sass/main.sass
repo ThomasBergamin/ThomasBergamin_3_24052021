@@ -3,7 +3,14 @@
 @import "./components/buttons"
 
 nav
-    background-color: $color_primary
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 18px 0 10px 0
+    -webkit-box-shadow: 0px 7px 4px 0px rgba(0,0,0,0.15)
+    box-shadow: 0px 7px 4px 0px rgba(0,0,0,0.15)
+    z-index: 2
+    position: relative
 
 main
     font-family: $text_font
@@ -12,4 +19,43 @@ button
     @include button
 
 #search
-    background-color: $grey_background
+    background-color: $dark_grey_background
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 15px 0
+    z-index: 0
+
+#explore
+    background-color: $light_grey_background
+
+.explore_wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    padding: 40px
+    h2
+        margin: 0 0 5px
+    p
+        font-weight: 300
+        font-size: 20px
+        margin: 5px 0 20px 0
+
+#explanations
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+#restaurants
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+footer
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
