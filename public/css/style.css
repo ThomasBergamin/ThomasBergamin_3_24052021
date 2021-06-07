@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0 10px 0;
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  position: relative;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border-radius: 50px;
+  border: 0px;
+  color: white;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 19px;
+  background: #FF79DA;
+  background: -moz-linear-gradient(top, #FF79DA 0%, #FF79DA 17%, #9356dc 100%);
+  background: -webkit-linear-gradient(top, #FF79DA 0%, #FF79DA 17%, #9356dc 100%);
+  background: linear-gradient(to bottom, #FF79DA 0%, #FF79DA 17%, #9356dc 100%);
+  -webkit-box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.36);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+button:hover {
+  transform: scale(1.08);
+}
+
+#search {
+  background-color: #E1E1E1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  z-index: 0;
+}
+
+.search_wrapper {
+  display: flex;
+  align-items: baseline;
+}
+.search_wrapper p {
+  margin: 0 0 0 10px;
+}
+
+#explore {
+  background-color: #F7F7F7;
+}
+
+.explore_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+.explore_wrapper h2 {
+  margin: 0 0 5px;
+}
+.explore_wrapper p {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 5px 0 20px 0;
+}
+
+#explanations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#restaurants {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F7F7F7;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #414141;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 0;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 10px 0;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
+footer ul li p {
+  margin: 0;
+  cursor: pointer;
+}
+footer ul li p:hover {
+  text-decoration: underline;
+}
+
+.footer_logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  margin: 0;
+}
+
+.list_icon {
+  margin-right: 10px;
+}
+
+.list_icon_right {
+  font-size: 12px;
+  margin-right: 9px;
+}
+
+.mail_link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/*# sourceMappingURL=style.css.map */
