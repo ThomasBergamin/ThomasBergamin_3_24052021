@@ -134,12 +134,23 @@ button:hover {
 }
 
 .restaurants_card {
-  height: 275px;
-  width: 400px;
+  height: 250px;
+  width: 375px;
   margin: 15px 0;
   box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   background-color: white;
+}
+
+.restaurants_card_header_img {
+  border-radius: 20px 20px 0 0;
+  height: 185px;
+  width: 375px;
+  object-fit: cover;
+}
+
+.restaurants_card_footer {
+  z-index: 1;
 }
 
 footer {
