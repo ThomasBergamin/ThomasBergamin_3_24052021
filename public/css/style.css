@@ -133,6 +133,15 @@ button:hover {
   background-color: #F7F7F7;
 }
 
+.restaurants_card {
+  height: 275px;
+  width: 400px;
+  margin: 15px 0;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  background-color: white;
+}
+
 footer {
   display: flex;
   align-items: center;
