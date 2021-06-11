@@ -24,17 +24,16 @@ button {
   font-size: 18px;
   line-height: 18px;
   padding: 19px;
-  background: #FF79DA;
-  background: -moz-linear-gradient(top, #FF79DA 0%, #FF79DA 17%, #9356dc 100%);
-  background: -webkit-linear-gradient(top, #FF79DA 0%, #FF79DA 17%, #9356dc 100%);
   background: linear-gradient(to bottom, #FF79DA 0%, #FF79DA 17%, #9356dc 100%);
-  -webkit-box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.36);
   box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.36);
   cursor: pointer;
-  transition-duration: 0.3s;
+  transition: transform 300ms, background 450ms, box-shadow 450ms;
+  transition-delay: 0, 150ms, 150ms;
 }
 button:hover {
   transform: scale(1.08);
+  background: linear-gradient(to bottom, #ff83dd 0%, #ff83dd 17%, #a16be0 100%);
+  box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.6);
 }
 
 #search {
@@ -80,6 +79,51 @@ button:hover {
   justify-content: center;
   flex-direction: column;
 }
+#explanations h2 {
+  margin-bottom: 0;
+}
+
+.explanations_card {
+  border-radius: 15px;
+  margin: 25px 0;
+  padding: 25px;
+  background-color: #F7F7F7;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 350ms, background-color 400ms, color 400ms;
+  transition-delay: 0, 150ms, 150ms;
+}
+.explanations_card--active {
+  background-color: #f2eafb;
+}
+.explanations_card:hover {
+  transform: scale(1.08);
+  background-color: #FF79DA;
+  color: white;
+}
+
+.explanations_card_content {
+  position: relative;
+  left: -35px;
+}
+
+.explanations_card_number {
+  padding: 4px 8px;
+  background-color: #9356dc;
+  border-radius: 100px;
+  color: white;
+  font-size: small;
+}
+
+.icon {
+  margin: 0 20px;
+  color: #9B9B9B;
+}
+.icon--active {
+  color: #9356dc;
+}
 
 #restaurants {
   display: flex;
@@ -94,7 +138,7 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #414141;
+  background-color: #9B9B9B;
   color: white;
   font-family: "Roboto", sans-serif;
   padding: 20px 0;
