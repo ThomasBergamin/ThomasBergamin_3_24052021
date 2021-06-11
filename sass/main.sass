@@ -60,12 +60,31 @@ button
         margin-bottom: 0
 
 .explanations_card
-    margin: 20px 0
-    padding: 20px
+    border-radius: 15px
+    margin: 25px 0
+    padding: 25px
     background-color: $light_grey_background
     font-weight: bold
+    -webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.15)
+    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.15)
+
     &--active
-        background-color: lighten($color_secondary, 22%)
+        background-color: lighten($color_primary, 35%)
+
+.explanations_card_number
+    padding: 4px 8px
+    background-color: $color_primary
+    border-radius: 100px
+    color: white
+    font-size: small
+    position: relative
+    left: -35px
+
+.icon
+    margin: 0 15px 0 0
+    color: $darkest_grey_background
+    &--active
+        color: $color_primary
 
 #restaurants
     display: flex
