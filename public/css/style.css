@@ -91,17 +91,9 @@ button:hover {
   font-weight: bold;
   -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  transition: transform 350ms, background-color 400ms, color 400ms;
-  transition-delay: 0, 150ms, 150ms;
 }
 .explanations_card--active {
   background-color: #f2eafb;
-}
-.explanations_card:hover {
-  transform: scale(1.08);
-  background-color: #FF79DA;
-  color: white;
 }
 
 .explanations_card_content {
@@ -144,6 +136,13 @@ button:hover {
   display: block;
   text-decoration: inherit;
   color: inherit;
+  transition: transform 350ms, background-color 400ms, color 400ms;
+  transition-delay: 0, 150ms, 150ms;
+}
+.restaurants_card:hover {
+  transform: scale(1.08);
+  background-color: #FF79DA;
+  color: white;
 }
 
 .restaurants_card_header_img {
