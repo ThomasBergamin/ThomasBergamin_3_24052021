@@ -143,6 +143,24 @@ button:hover {
   transform: scale(1.08);
 }
 
+.restaurants_card_header {
+  position: relative;
+}
+
+.restaurants_card_header_new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #99e2d0;
+  font-weight: bold;
+  color: #278870;
+  padding: 7px 15px;
+  border-radius: 4px;
+}
+.restaurants_card_header_new p {
+  margin: 0;
+}
+
 .restaurants_card_header_img {
   border-radius: 20px 20px 0 0;
   height: 185px;
