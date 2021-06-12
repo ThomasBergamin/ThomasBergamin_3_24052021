@@ -195,6 +195,7 @@ footer {
 }
 footer ul {
   list-style-type: none;
+  padding: 0;
 }
 footer ul li {
   display: flex;
@@ -231,6 +232,25 @@ footer ul li p:hover {
 .mail_link {
   text-decoration: inherit;
   color: inherit;
+}
+
+@media screen and (max-width: 419px) {
+  .restaurants_card {
+    width: 325px;
+  }
+
+  .restaurants_card_header_img {
+    width: 325px;
+  }
+}
+@media screen and (max-width: 349px) {
+  .restaurants_card {
+    width: 285px;
+  }
+
+  .restaurants_card_header_img {
+    width: 285px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
