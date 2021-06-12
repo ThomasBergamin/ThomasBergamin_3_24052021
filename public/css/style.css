@@ -136,13 +136,11 @@ button:hover {
   display: block;
   text-decoration: inherit;
   color: inherit;
-  transition: transform 350ms, background-color 400ms, color 400ms;
-  transition-delay: 0, 150ms, 150ms;
+  transition: transform 350ms;
+  transition-delay: 0;
 }
 .restaurants_card:hover {
   transform: scale(1.08);
-  background-color: #FF79DA;
-  color: white;
 }
 
 .restaurants_card_header_img {
