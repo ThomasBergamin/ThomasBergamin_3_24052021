@@ -109,11 +109,11 @@ button:hover {
   font-size: small;
 }
 
-.icon {
+.explanations_card_icon {
   margin: 0 20px;
   color: #9B9B9B;
 }
-.icon--active {
+.explanations_card_icon--active {
   color: #9356dc;
 }
 
