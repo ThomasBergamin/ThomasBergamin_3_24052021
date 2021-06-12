@@ -63,6 +63,7 @@ button:hover {
   justify-content: center;
   flex-direction: column;
   padding: 40px;
+  text-align: center;
 }
 .explore_wrapper h2 {
   margin: 0 0 5px;
