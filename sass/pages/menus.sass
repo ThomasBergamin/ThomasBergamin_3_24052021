@@ -7,6 +7,12 @@
 body
     margin: 0
 
+h1
+    font-family: $title_font
+
+main
+    font-family: $text_font
+
 .nav
     @include nav
     padding-right: 80px
@@ -17,11 +23,29 @@ body
         a
             color: black
 
-main
-    font-family: $text_font
-
 .btn_primary
     @include button
 
+.img_background_wrapper
+    height: 200px
+    &_img
+        height: 200px
+        width: 100%
+        object-fit: cover
+
+.content_wrapper
+    position: relative
+    top: -40px
+    background-color: white
+    border-radius: 35px
+.content_header
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    &_text
+        padding-left: 50px
+    &_logo
+        padding-left: 50px
 .footer
     @include footer
