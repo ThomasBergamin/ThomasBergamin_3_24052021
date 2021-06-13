@@ -1,3 +1,23 @@
 @import "../utils/variables"
 @import "../base/typography"
 @import "../components/buttons"
+@import "../layouts/header"
+@import "../layouts/footer"
+
+body
+    margin: 0
+
+.nav
+    @include nav
+    &_arrow
+        position: relative
+        x: -100px
+
+main
+    font-family: $text_font
+
+.btn_primary
+    @include button
+
+.footer
+    @include footer

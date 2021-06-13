@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0 10px 0;
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  position: relative;
+}
+.nav_arrow {
+  position: relative;
+  x: -100px;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn_primary {
+  border-radius: 50px;
+  border: 0px;
+  color: white;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 19px;
+  background: linear-gradient(to bottom, #FF79DA 0%, #FF79DA 17%, #9356dc 100%);
+  box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.36);
+  cursor: pointer;
+  transition: transform 300ms, background 450ms, box-shadow 450ms;
+  transition-delay: 0, 150ms, 150ms;
+}
+.btn_primary:hover {
+  transform: scale(1.08);
+  background: linear-gradient(to bottom, #ff83dd 0%, #ff83dd 17%, #a16be0 100%);
+  box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.6);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #474747;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer ul li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 10px 0;
+}
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+.footer ul li p {
+  margin: 0;
+  cursor: pointer;
+}
+.footer ul li p:hover {
+  text-decoration: underline;
+}
+.footer_logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  margin: 0;
+}
+.footer_list_icon {
+  margin-right: 10px;
+}
+.footer_list_icon--right {
+  font-size: 12px;
+  margin-right: 9px;
+}
+.footer_mail_link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/*# sourceMappingURL=menus.css.map */
