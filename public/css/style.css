@@ -255,7 +255,7 @@ main {
   }
 }
 @media screen and (max-width: 500px) {
-  footer {
+  .footer {
     align-items: start;
     padding-left: 35px;
   }
@@ -284,15 +284,6 @@ main {
 @media screen and (max-width: 1080px) {
   .restaurants_wrapper {
     width: 100%;
-  }
-}
-@media screen and (max-width: 850px) {
-  .restaurants_card {
-    width: 325px;
-  }
-
-  .restaurants_card_header_img {
-    width: 325px;
   }
 }
 
