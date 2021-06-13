@@ -259,6 +259,10 @@ footer ul li p:hover {
     align-items: start;
     padding-left: 35px;
   }
+
+  .explore_wrapper p {
+    font-size: 17px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
