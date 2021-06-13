@@ -11,10 +11,14 @@ body {
   box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
   z-index: 2;
   position: relative;
+  padding-right: 80px;
 }
 .nav_arrow {
-  position: relative;
-  x: -100px;
+  font-size: 24px;
+  padding-right: 80px;
+}
+.nav_arrow a {
+  color: black;
 }
 
 main {
