@@ -1,19 +1,14 @@
 @import "../utils/variables"
 @import "../base/typography"
 @import "../components/buttons"
+@import "../layouts/header"
+@import "../layouts/footer"
 
 body
     margin: 0
 
 .nav
-    display: flex
-    align-items: center
-    justify-content: center
-    padding: 18px 0 10px 0
-    -webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.15)
-    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.15)
-    z-index: 2
-    position: relative
+    @include nav
 
 main
     font-family: $text_font
@@ -151,47 +146,8 @@ main
             margin: 0
             font-weight: 300
 
-footer
-    display: flex
-    align-items: center
-    justify-content: center
-    flex-direction: column
-    background-color: $footer_background
-    color: white
-    font-family: $text_font
-    padding: 20px 0
-    margin-top: 50px
-    ul
-        list-style-type: none
-        padding: 0
-        li
-            display: flex
-            justify-content: left
-            align-items: center
-            margin: 10px 0
-            a
-                &:hover
-                    text-decoration: underline
-            p
-                margin: 0
-                cursor: pointer
-                &:hover
-                    text-decoration: underline
-
-.footer_logo
-    font-family: $title_font
-    font-size: 20px
-    margin: 0
-
-.footer_list_icon
-    margin-right: 10px
-    &--right
-        font-size: 12px
-        margin-right: 9px
-
-.mail_link
-    text-decoration: inherit
-    color: inherit
+.footer
+    @include footer
 
 @media screen and ( max-width: 419px )
     .restaurants_card
