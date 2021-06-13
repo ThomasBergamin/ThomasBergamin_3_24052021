@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@ main {
   font-family: "Roboto", sans-serif;
 }
 
-button {
+.btn_primary {
   border-radius: 50px;
   border: 0px;
   color: white;
@@ -30,7 +30,7 @@ button {
   transition: transform 300ms, background 450ms, box-shadow 450ms;
   transition-delay: 0, 150ms, 150ms;
 }
-button:hover {
+.btn_primary:hover {
   transform: scale(1.08);
   background: linear-gradient(to bottom, #ff83dd 0%, #ff83dd 17%, #a16be0 100%);
   box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.6);
@@ -96,12 +96,10 @@ button:hover {
 .explanations_card--active {
   background-color: #f2eafb;
 }
-
 .explanations_card_content {
   position: relative;
   left: -35px;
 }
-
 .explanations_card_number {
   padding: 4px 8px;
   background-color: #9356dc;
@@ -109,7 +107,6 @@ button:hover {
   color: white;
   font-size: small;
 }
-
 .explanations_card_icon {
   margin: 0 20px;
   color: #9B9B9B;
@@ -151,14 +148,21 @@ button:hover {
   transition: transform 350ms;
   transition-delay: 0;
 }
+.restaurants_card p {
+  margin: 0;
+}
 .restaurants_card:hover {
   transform: scale(1.08);
 }
-
 .restaurants_card_header {
   position: relative;
 }
-
+.restaurants_card_header_img {
+  border-radius: 20px 20px 0 0;
+  height: 185px;
+  width: 375px;
+  object-fit: cover;
+}
 .restaurants_card_header_new {
   position: absolute;
   top: 20px;
@@ -170,17 +174,6 @@ button:hover {
   border-radius: 4px;
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
 }
-.restaurants_card_header_new p {
-  margin: 0;
-}
-
-.restaurants_card_header_img {
-  border-radius: 20px 20px 0 0;
-  height: 185px;
-  width: 375px;
-  object-fit: cover;
-}
-
 .restaurants_card_footer {
   padding: 12px 25px 12px 15px;
   display: flex;
