@@ -126,10 +126,21 @@ button:hover {
   background-color: #F7F7F7;
 }
 
+.restaurants_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 65%;
+  background-color: #F7F7F7;
+}
+
 .restaurants_card {
   height: 255px;
   width: 375px;
-  margin: 15px 0;
+  margin: 25px 25px;
   box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   background-color: white;
@@ -262,6 +273,37 @@ footer ul li p:hover {
 
   .explore_wrapper p {
     font-size: 17px;
+  }
+
+  .restaurants_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F7F7F7;
+  }
+
+  .restaurants {
+    margin: 15px 0;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .restaurants_wrapper {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .restaurants_wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .restaurants_card {
+    width: 325px;
+  }
+
+  .restaurants_card_header_img {
+    width: 325px;
   }
 }
 
