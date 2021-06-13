@@ -226,11 +226,10 @@ footer ul li p:hover {
   margin: 0;
 }
 
-.list_icon {
+.footer_list_icon {
   margin-right: 10px;
 }
-
-.list_icon_right {
+.footer_list_icon--right {
   font-size: 12px;
   margin-right: 9px;
 }
