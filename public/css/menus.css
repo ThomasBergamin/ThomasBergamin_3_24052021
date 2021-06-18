@@ -106,6 +106,7 @@ main {
 .content_menu {
   margin-bottom: 35px;
 }
+
 .content_menu_card {
   background-color: white;
   width: 550px;
@@ -117,13 +118,13 @@ main {
 .content_menu_card p, .content_menu_card h3 {
   margin: 4px 0;
 }
-.content_menu_footer {
+.content_menu_card_footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.content_menu_footer span {
+.content_menu_card_footer span {
   font-weight: bold;
 }
 
