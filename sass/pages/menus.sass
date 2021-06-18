@@ -9,6 +9,7 @@ body
 
 h1
     font-family: $title_font
+    font-size: 2em
 
 main
     font-family: $text_font
@@ -36,8 +37,8 @@ main
 .content_wrapper
     position: relative
     top: -40px
-    background-color: white
-    border-radius: 35px
+    background-color: $light_grey_background
+    border-radius: 35px 35px 0 0
 .content_header
     display: flex
     justify-content: center
@@ -47,5 +48,14 @@ main
         padding-left: 50px
     &_logo
         padding-left: 50px
+
+.content_menu_header
+    display: flex
+    justify-content: center
+    h2
+        font-weight: 300
+    &_border
+        border-bottom: 3px solid $color_tertiary
+
 .footer
     @include footer
