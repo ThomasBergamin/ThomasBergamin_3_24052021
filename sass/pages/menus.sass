@@ -38,6 +38,10 @@ main
     background-color: $light_grey_background
 
 .content_wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
     position: relative
     top: -40px
     background-color: $light_grey_background
@@ -68,7 +72,7 @@ main
 
 .content_menu_card
     background-color: white
-    width: 500px
+    width: 550px
     box-shadow: 3px 7px 7px 0px rgba(0,0,0,0.07)
     border-radius: 8px
     padding: 10px
@@ -83,6 +87,12 @@ main
         align-items: center
         span
             font-weight: bold
+
+button
+    margin-top: 35px
+    margin-bottom: 15px
+    padding: 20px 50px
+    @include button
 
 .footer
     @include footer

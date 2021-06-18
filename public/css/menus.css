@@ -36,7 +36,6 @@ main {
   color: white;
   font-size: 18px;
   line-height: 18px;
-  padding: 19px;
   background: linear-gradient(to bottom, #FF79DA 0%, #FF79DA 17%, #9356dc 100%);
   box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.36);
   cursor: pointer;
@@ -63,6 +62,10 @@ main {
 }
 
 .content_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   position: relative;
   top: -40px;
   background-color: #F7F7F7;
@@ -102,7 +105,7 @@ main {
 
 .content_menu_card {
   background-color: white;
-  width: 500px;
+  width: 550px;
   box-shadow: 3px 7px 7px 0px rgba(0, 0, 0, 0.07);
   border-radius: 8px;
   padding: 10px;
@@ -119,6 +122,27 @@ main {
 }
 .content_menu_card_footer span {
   font-weight: bold;
+}
+
+button {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  padding: 20px 50px;
+  border-radius: 50px;
+  border: 0px;
+  color: white;
+  font-size: 18px;
+  line-height: 18px;
+  background: linear-gradient(to bottom, #FF79DA 0%, #FF79DA 17%, #9356dc 100%);
+  box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.36);
+  cursor: pointer;
+  transition: transform 300ms, background 450ms, box-shadow 450ms;
+  transition-delay: 0, 150ms, 150ms;
+}
+button:hover {
+  transform: scale(1.08);
+  background: linear-gradient(to bottom, #ff83dd 0%, #ff83dd 17%, #a16be0 100%);
+  box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.6);
 }
 
 .footer {
