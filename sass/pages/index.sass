@@ -147,12 +147,8 @@ main
     display: block
     text-decoration: inherit
     color: inherit
-    transition: transform 350ms
-    transition-delay: 0
     p
         margin: 0
-    &:hover
-        transform: scale(1.08)
     &_header
         position: relative
         &_img
@@ -182,6 +178,22 @@ main
         p
             margin: 0
             font-weight: 300
+        &_right
+            position: relative
+
+.heart_icon
+    opacity: 1
+    transition: all 1s
+    transition-delay: 0 150ms
+    position: absolute
+    background-color: white
+    &:hover
+        opacity: 0
+    &:hover + .heart_icon_filled
+        opacity: 1
+    &_filled
+        color: $color_primary
+        opacity: 1
 
 .footer
     margin-top: 50px
