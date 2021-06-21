@@ -1,3 +1,42 @@
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 3s linear forwards;
+}
+
+.loader_animation {
+  width: 64px;
+  height: 64px;
+  border: 6px solid gray;
+  border-color: #9356dc transparent #FF79DA transparent;
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+@keyframes loader {
+  0%, 85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
 }
@@ -18,12 +57,12 @@ main {
 }
 
 .btn_primary {
+  padding: 19px;
   border-radius: 50px;
   border: 0px;
   color: white;
   font-size: 18px;
   line-height: 18px;
-  padding: 19px;
   background: linear-gradient(to bottom, #FF79DA 0%, #FF79DA 17%, #9356dc 100%);
   box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.36);
   cursor: pointer;
@@ -87,6 +126,7 @@ main {
 .explanations_card {
   border-radius: 15px;
   margin: 25px 0;
+  width: 250px;
   padding: 25px;
   background-color: #F7F7F7;
   font-weight: bold;
@@ -189,6 +229,7 @@ main {
 }
 
 .footer {
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,7 +238,6 @@ main {
   color: white;
   font-family: "Roboto", sans-serif;
   padding: 20px 0;
-  margin-top: 50px;
 }
 .footer ul {
   list-style-type: none;
