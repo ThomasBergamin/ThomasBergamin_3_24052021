@@ -163,6 +163,7 @@ main {
   justify-content: center;
   flex-direction: column;
   background-color: #F7F7F7;
+  padding-bottom: 20px;
 }
 
 .restaurants_wrapper {
@@ -234,7 +235,6 @@ main {
   transition-delay: 0 150ms;
   position: absolute;
   background-color: white;
-  cursor: pointer;
 }
 .heart_icon:hover {
   opacity: 0;
@@ -248,7 +248,6 @@ main {
 }
 
 .footer {
-  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
