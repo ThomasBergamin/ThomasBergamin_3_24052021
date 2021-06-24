@@ -1,0 +1,13 @@
+@mixin heart_icon
+    opacity: 1
+    transition: all 1s
+    transition-delay: 0 150ms
+    position: absolute
+    background-color: white
+    &:hover
+        opacity: 0
+    &:hover + .heart_icon_filled
+        opacity: 1
+    &_filled
+        color: $color_primary
+        opacity: 1
