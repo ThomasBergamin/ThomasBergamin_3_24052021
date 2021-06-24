@@ -57,6 +57,24 @@ main {
   object-fit: cover;
 }
 
+.heart_icon {
+  opacity: 1;
+  transition: all 1s;
+  transition-delay: 0 150ms;
+  position: absolute;
+  background-color: white;
+}
+.heart_icon:hover {
+  opacity: 0;
+}
+.heart_icon:hover + .heart_icon_filled {
+  opacity: 1;
+}
+.heart_icon_filled {
+  color: #9356dc;
+  opacity: 1;
+}
+
 #content {
   background-color: #F7F7F7;
 }

@@ -1,6 +1,7 @@
 @import "../utils/variables"
 @import "../base/typography"
 @import "../components/buttons"
+@import "../components/heart-icon"
 @import "../layouts/header"
 @import "../layouts/footer"
 
@@ -33,6 +34,9 @@ main
         height: 200px
         width: 100%
         object-fit: cover
+
+.heart_icon
+    @include heart_icon
 
 #content
     background-color: $light_grey_background

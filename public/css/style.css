@@ -234,6 +234,7 @@ main {
   transition-delay: 0 150ms;
   position: absolute;
   background-color: white;
+  cursor: pointer;
 }
 .heart_icon:hover {
   opacity: 0;

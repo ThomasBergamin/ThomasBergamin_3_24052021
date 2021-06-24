@@ -1,6 +1,7 @@
 @import "../utils/variables"
 @import "../base/typography"
 @import "../components/buttons"
+@import "../components/heart-icon"
 @import "../layouts/header"
 @import "../layouts/footer"
 
@@ -182,18 +183,7 @@ main
             position: relative
 
 .heart_icon
-    opacity: 1
-    transition: all 1s
-    transition-delay: 0 150ms
-    position: absolute
-    background-color: white
-    &:hover
-        opacity: 0
-    &:hover + .heart_icon_filled
-        opacity: 1
-    &_filled
-        color: $color_primary
-        opacity: 1
+    @include heart_icon
 
 .footer
     margin-top: 50px
