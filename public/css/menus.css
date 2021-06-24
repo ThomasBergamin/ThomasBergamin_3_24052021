@@ -106,6 +106,7 @@ main {
 .content_menu_header {
   display: flex;
   justify-content: center;
+  visibility: hidden;
 }
 .content_menu_header h2 {
   font-weight: 300;
@@ -132,6 +133,7 @@ main {
   border-radius: 14px;
   padding: 10px;
   margin: 10px 0;
+  visibility: hidden;
 }
 .content_menu_card p, .content_menu_card h3 {
   margin: 4px 0;
@@ -146,6 +148,46 @@ main {
   font-weight: bold;
 }
 
+.appear_1 {
+  animation: apparition 2000ms forwards;
+}
+.appear_2 {
+  animation: apparition 2000ms 300ms forwards;
+}
+.appear_3 {
+  animation: apparition 2000ms 600ms forwards;
+}
+.appear_4 {
+  animation: apparition 2000ms 900ms forwards;
+}
+.appear_5 {
+  animation: apparition 2000ms 1200ms forwards;
+}
+.appear_6 {
+  animation: apparition 2000ms 1500ms forwards;
+}
+.appear_7 {
+  animation: apparition 2000ms 1800ms forwards;
+}
+.appear_8 {
+  animation: apparition 2000ms 2100ms forwards;
+}
+.appear_9 {
+  animation: apparition 2000ms 2400ms forwards;
+}
+.appear_10 {
+  animation: apparition 2000ms 2700ms forwards;
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 button {
   margin-top: 35px;
   margin-bottom: 15px;
