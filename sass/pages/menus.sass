@@ -86,6 +86,10 @@ main
     padding: 10px
     margin: 10px 0
     visibility: hidden
+    position: relative
+    text-overflow: ellipsis
+    overflow: hidden
+    
     p, h3
         margin: 4px 0
 
@@ -96,6 +100,30 @@ main
         align-items: center
         span
             font-weight: bold
+    &:hover span 
+        transform: rotate(360deg)
+    &:hover .check
+        opacity: 1
+        transform: translate(-70px)
+
+
+.check
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $color_tertiary
+    width: 50px
+    height: 38px
+    position: absolute
+    padding: 20px
+    right: -70px
+    top: 0
+    opacity: 0
+    transition: transform 330ms ease-in-out
+    border-radius: 0px 15px 15px 0px
+    span
+        color: white
+        transition: transform 500ms ease-in-out
 
 .appear
     &_1
