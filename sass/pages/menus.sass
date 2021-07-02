@@ -85,26 +85,27 @@ main
     border-radius: 14px
     padding: 10px
     margin: 10px 0
+    display: flex
+    flex-direction: column
     visibility: hidden
     position: relative
     text-overflow: ellipsis
     overflow: hidden
     z-index: 0
-
+    box-sizing: border-box
     p, h3
         margin: 4px 0
-
     &_footer
         display: flex
-        flex-direction: row
         justify-content: space-between
         align-items: center
         span
             font-weight: bold
+    &:hover
+        padding-right: 100px
     &:hover span
         transform: rotate(360deg)
     &:hover .check
-        opacity: 1
         transform: translate(-90px)
 
 .check
@@ -119,7 +120,6 @@ main
     padding: 20px
     right: -90px
     top: 0
-    opacity: 1
     transition: transform 400ms ease-in-out
     border-radius: 0px 15px 15px 0px
     span
