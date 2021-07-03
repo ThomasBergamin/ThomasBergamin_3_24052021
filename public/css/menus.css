@@ -91,7 +91,6 @@ main {
 
 .content_header {
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -302,10 +301,46 @@ button:hover {
   .content_menu_card {
     width: 400px;
   }
+
+  .content_header_text {
+    padding-left: 0px;
+  }
+
+  .content_menu_header {
+    justify-content: left;
+  }
 }
 @media screen and (max-width: 420px) {
   .content_menu_card {
-    width: 300px;
+    width: 350px;
+  }
+  .content_menu_card h3 {
+    font-size: 1rem;
+  }
+  .content_menu_card p {
+    font-size: 0.9rem;
+  }
+
+  .check {
+    width: 25px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .content_menu_card {
+    width: 305px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .nav_arrow {
+    margin-right: 1rem;
+  }
+
+  .nav {
+    padding-right: 1rem;
+  }
+
+  .content_header_logo {
+    margin-right: 0px;
   }
 }
 
