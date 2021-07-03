@@ -57,6 +57,21 @@ main {
   font-family: "Roboto", sans-serif;
 }
 
+input {
+  border: 0px;
+  background-color: inherit;
+  margin-left: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  width: 150px;
+}
+input:focus {
+  outline: none !important;
+  border: 2px solid #9356dc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #FF79DA;
+}
+
 .btn_primary {
   padding: 19px;
   border-radius: 50px;
