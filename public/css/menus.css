@@ -62,6 +62,7 @@ main {
   transition-delay: 0 150ms;
   position: absolute;
   background-color: white;
+  font-size: 1.33em;
 }
 .heart_icon:hover {
   opacity: 0;
@@ -72,6 +73,7 @@ main {
 .heart_icon_filled {
   color: #9356dc;
   opacity: 1;
+  font-size: 1.33em;
 }
 
 #content {
@@ -323,6 +325,10 @@ button:hover {
 
   .check {
     width: 25px;
+  }
+
+  .content_header_text {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 360px) {
