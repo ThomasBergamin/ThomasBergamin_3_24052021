@@ -83,7 +83,7 @@ input:focus {
   box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.36);
   cursor: pointer;
   transition: transform 300ms, background 450ms, box-shadow 450ms;
-  transition-delay: 0, 150ms, 150ms;
+  transition-delay: 0ms, 150ms, 150ms;
 }
 .btn_primary:hover {
   transform: scale(1.08);
@@ -246,7 +246,7 @@ input:focus {
 .heart_icon {
   opacity: 1;
   transition: all 1s;
-  transition-delay: 0 150ms;
+  transition-delay: 0ms 150ms;
   position: absolute;
   background-color: white;
   font-size: 1.33em;
@@ -327,8 +327,29 @@ input:focus {
   .restaurants_card_header_img {
     width: 285px;
   }
+
+  .explanations_card {
+    white-space: nowrap;
+  }
 }
 @media screen and (max-width: 500px) {
+  #explanations {
+    align-items: normal;
+    margin: 0 25px;
+  }
+
+  .explanations_card {
+    width: 85%;
+    margin-right: 0px;
+  }
+
+  #restaurants {
+    align-items: normal;
+  }
+  #restaurants h2 {
+    margin-left: 25px;
+  }
+
   .footer {
     align-items: start;
     padding-left: 35px;
