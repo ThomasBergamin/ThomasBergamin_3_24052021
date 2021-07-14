@@ -153,6 +153,9 @@ input:focus {
 .explanations_card:hover {
   background-color: #f2eafb;
 }
+.explanations_card:hover .explanations_card_icon {
+  color: #9356dc;
+}
 .explanations_card_content {
   position: relative;
   left: -35px;
@@ -167,9 +170,6 @@ input:focus {
 .explanations_card_icon {
   margin: 0 20px;
   color: #9B9B9B;
-}
-.explanations_card_icon--active {
-  color: #9356dc;
 }
 
 #restaurants {

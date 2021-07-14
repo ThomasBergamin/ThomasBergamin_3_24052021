@@ -117,6 +117,8 @@ input
     box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.15)
     &:hover
         background-color: lighten($color_primary, 35%)
+    &:hover .explanations_card_icon
+        color: $color_primary
 
     &_content
         position: relative
@@ -131,8 +133,6 @@ input
     &_icon
         margin: 0 20px
         color: $darkest_grey_background
-        &--active
-            color: $color_primary
 
 #restaurants
     display: flex
