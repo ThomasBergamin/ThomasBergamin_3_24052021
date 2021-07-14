@@ -145,6 +145,7 @@ main {
   white-space: nowrap;
   z-index: 0;
   box-sizing: border-box;
+  transition-duration: 0.6s;
 }
 .content_menu_card p, .content_menu_card h3 {
   text-overflow: ellipsis;
