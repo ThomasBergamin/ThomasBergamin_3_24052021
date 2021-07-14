@@ -9,7 +9,7 @@
   "scripts": {
     "sass": "sass --watch ./sass/pages/index.sass:./public/css/style.css --style expanded",
     "menus" : "sass --watch ./sass/pages/menus.sass:./public/css/menus.css --style expanded",
-    "prefix": "postcss ./public/css/menus.css --use autoprefixer -d ./public/css/prefixed/"
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",

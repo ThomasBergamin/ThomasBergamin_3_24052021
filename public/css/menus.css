@@ -59,7 +59,7 @@ main {
 .heart_icon {
   opacity: 1;
   transition: all 1s;
-  transition-delay: 0ms 150ms;
+  transition-delay: 0ms, 150ms;
   position: absolute;
   background-color: white;
   font-size: 1.33em;
